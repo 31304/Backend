@@ -8,7 +8,6 @@ let EventRoutes = require("./Routes/EventRoutes");
 const authController = require("./Authentication/Authentication");
 const attendeeController = require("./Controller/attendee");
 const eventController = require("./Controller/eventAttende");
-const ticketController = require("./controller/ticket");
 const notificationController = require("./Controller/notification");
 const jwt = require("jsonwebtoken");
 const strip = require("stripe")(process.env.STRIPE_SECRET_KEY);
