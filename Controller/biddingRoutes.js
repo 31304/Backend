@@ -77,8 +77,6 @@ router.get("/", authenticateUser, async (req, res) => {
       path: "eventId",
       select: "eventName dateTime",
     }); // Populating event name and date
-
-    // Format the bids to include required fields
     const formattedBids = bids.map((bid) => ({
       bidId: bid._id,
       eventName: bid.eventId.eventName,
