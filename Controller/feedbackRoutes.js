@@ -103,7 +103,6 @@ router.get('/:feedbackId', authenticateUser, async (req, res) => {
             response: feedback.response,
             date: feedback.date
         };
-
         res.status(200).json(feedbackData);
     } catch (error) {
         res.status(500).json({ message: 'Error fetching feedback: ' + error.message });
